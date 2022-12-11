@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefbe9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header {
+  background-color: #e1eedd;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #183a1d;
+  font-weight: 600;
+}
+
+.card {
+  background-color: #e1eedd;
+  max-width: 340px;
+  width: 100%;
+  max-height: 380px;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.info {
+  padding: 14px;
+}
+
+p,
+span {
+  color: #183a1d;
+}
+
+.country-flag {
+  font-size: 200px;
+  text-align: center;
+  /* width: 100%; */
+}
+
+.country-name {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.info-text {
+  font-weight: 600;
+}
+
+.info-text span {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.pagination {
+  padding: 20px 0 20px 0;
+}
+
+.pagination button {
+  padding: 6px 8px;
+  margin-right: 8px;
+  background-color: #e1eedd;
+  border-radius: 4px;
+  color: #183a1d;
+  border: 1px solid #183a1d24;
+}
+
+.pagination button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+  /* width: 100%; */
+}
+
+.country-card-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #e1eedd;
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.info-section {
+  margin-left: 20px;
+}
+
+.countrydetails-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.comments-wrapper {
+  border-radius: 7px;
+  width: 70%;
+  padding: 25px;
+  background-color: #e1eedd;
+  display: flex;
+  flex-direction: column;
+  max-height: 420px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.comment-section {
+  display: flex;
+  background-color: #fefbe9;
+  /* justify-content: space-between; */
+  border: 1px solid #183a1d;
+  align-items: center;
+  padding: 8px 5px;
+  border-radius: 7px;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin-bottom: 4px;
+}
+
+.user-image {
+  width: 70px;
+  height: 70px;
+  background-color: #183a1d;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comment-field input {
+  width: 88%;
+  padding: 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.comment-field button {
+  width: 10%;
+  border-radius: 7px;
+  background-color: #183a1d;
+  color: #fefbe9;
+  font-weight: 600;
+}
