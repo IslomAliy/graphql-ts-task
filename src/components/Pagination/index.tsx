@@ -1,5 +1,3 @@
-import React from "react";
-
 type PaginationProps = {
   totalPosts: number;
   postsPerPage: number;

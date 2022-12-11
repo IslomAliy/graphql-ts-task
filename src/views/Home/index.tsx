@@ -6,7 +6,7 @@ import Countries from "../Countries";
 function Home() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postsPerPage, setPostsPerPage] = useState<number>(9);
-  const [countries, setCountries] = useState<any[]>([]);
+  const [countries, setCountries] = useState<[]>([]);
 
   useEffect(() => {
     request(`query getAllCountries {
@@ -29,7 +29,6 @@ function Home() {
         currentPage={currentPage}
         postsPerPage={postsPerPage}
         countries={countries}
-        setCountries={setCountries}
       />
       <Pagination
         totalPosts={countries.length}

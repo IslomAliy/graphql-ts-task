@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
-import { request } from "../utils/axios";
 import { Link } from "react-router-dom";
 
 type CountriesProps = {
   currentPage: number;
   postsPerPage: number;
   countries: [];
-  setCountries: React.Dispatch<React.SetStateAction<any[]>>;
 };
 
 const Countries = ({
   currentPage,
   postsPerPage,
   countries,
-  setCountries,
 }: CountriesProps) => {
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPosts = countries?.slice(firstPostIndex, lastPostIndex);
+  const currentPosts: typeof Countries[] = countries?.slice(
+    firstPostIndex,
+    lastPostIndex
+  );
 
   return (
     <div className="container">
-      {currentPosts?.map((elm) => (
+      {currentPosts?.map((elm: any) => (
         <Link to={`country/${elm.code}`} className="card" key={elm.code}>
           <Card
             name={elm.name}
