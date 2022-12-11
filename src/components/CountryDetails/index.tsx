@@ -4,9 +4,19 @@ import { useParams } from "react-router-dom";
 import InfoCard from "./InfoCard";
 import Comments from "./Comments";
 
+const CountryProps = {
+  emoji: "",
+  name: "",
+  phone: "",
+  code: "",
+  capital: "",
+  currency: "",
+  native: "",
+};
+
 const CountryDetails = () => {
   const { id } = useParams();
-  const [country, setCountry] = useState({});
+  const [country, setCountry] = useState(CountryProps);
 
   useEffect(() => {
     request(
